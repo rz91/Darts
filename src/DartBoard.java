@@ -15,9 +15,9 @@ public class DartBoard extends JLabel implements MouseListener {
 
     public DartBoard(){
         try{
-
             this.picture_mouse = ImageIO.read(new File("src/Dartboard_black.png"));
-            this.setIcon(new ImageIcon(picture_mouse));
+            BufferedImage dartboard = ImageIO.read(new File("src/Dartboard.png"));
+            this.setIcon(new ImageIcon(dartboard));
             this.addMouseListener(this);
         } catch (IOException ex){}
     }
