@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.io.IOException;
 
-/**
- * Created by ronnyzingler on 21.02.17.
- */
+
 public class GameView extends JFrame {
 
     GameView(){
