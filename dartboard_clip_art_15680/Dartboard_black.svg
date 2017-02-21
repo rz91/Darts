@@ -54,7 +54,7 @@
     <use id="inner" transform="scale(0.90)" xlink:href="#SLICE"/>
   </defs>
   <g transform="scale(1,-1)">
-        <circle fill="white" r="226"/>
+        <circle fill="rgb(0,0,0)" r="226"/>
     <g id="dartboard">
       <g>
         <use fill="rgb(40,40,40)" xlink:href="#double"/>

@@ -10,8 +10,8 @@ public class GameView extends JFrame {
 
         DartView dv = new DartView();
         add(dv);
-        setSize(700,750);
         setResizable(false);
+        pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
     }

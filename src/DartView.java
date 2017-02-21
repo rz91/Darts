@@ -7,8 +7,6 @@ import javax.swing.*;
 public class DartView extends JPanel{
 
     DartView(){
-
-
         add(new DartBoard());
         setVisible(true);
     }
