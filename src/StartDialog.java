@@ -7,7 +7,7 @@ import java.awt.*;
 public class StartDialog extends JFrame{
     private JComboBox comboBox1;
     private JComboBox comboBox2;
-    private JButton startGameButton;
+    public JButton startGameButton;
     private JPanel panel1;
 
     public StartDialog(){
@@ -20,5 +20,6 @@ public class StartDialog extends JFrame{
         setContentPane(panel1);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
+
     }
 }

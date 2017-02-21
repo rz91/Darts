@@ -5,6 +5,8 @@ class Launcher {
         System.out.println("Hello World");
 
         StartDialog main = new StartDialog();
+        StartDialogController sdc = new StartDialogController(main);
+
 
     }
 }
