@@ -1,16 +1,16 @@
 package controller;
 
 import view.MainWindow;
-import view.StartDialog;
+import view.SettingsView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class StartDialogController implements ActionListener {
+public class SettingsViewController implements ActionListener {
 
-    private StartDialog sd;
+    private SettingsView sd;
 
-    public StartDialogController (StartDialog sd){
+    public SettingsViewController(SettingsView sd){
 
         this.sd = sd;
     }

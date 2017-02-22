@@ -1,21 +1,21 @@
 package view;
 
-import controller.StartDialogController;
+import controller.SettingsViewController;
 
 import javax.swing.*;
 import java.awt.*;
 
 
-public class StartDialog extends JFrame{
+public class SettingsView extends JFrame{
     private JComboBox comboBox1;
     private JComboBox comboBox2;
-    private StartDialogController c;
+    private SettingsViewController c;
     private JButton startGameButton;
     private JPanel panel1;
 
-    public StartDialog(){
+    public SettingsView(){
 
-        c = new StartDialogController(this);
+        c = new SettingsViewController(this);
         this.initialise();
     }
 
