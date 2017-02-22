@@ -1,10 +1,11 @@
+package view;
+
 import javax.swing.*;
-import java.io.IOException;
 
 
 public class GameView extends JFrame {
 
-    GameView(){
+   public GameView(){
 
         DartView dv = new DartView();
         add(dv);

@@ -1,3 +1,8 @@
+package controller;
+
+import view.GameView;
+import view.StartDialog;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

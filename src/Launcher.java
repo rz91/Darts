@@ -1,3 +1,5 @@
+import controller.StartDialogController;
+import view.StartDialog;
 
 class Launcher {
 
