@@ -1,18 +1,19 @@
 package view;
 
+import controller.StartDialogController;
+
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Created by Ronny on 20.02.2017.
- */
+
 public class StartDialog extends JFrame{
     private JComboBox comboBox1;
     private JComboBox comboBox2;
     public JButton startGameButton;
     private JPanel panel1;
 
-    public StartDialog(){
+    public StartDialog( StartDialogController c){
+
         int size_x = 300;
         int size_y = 300;
         panel1.setBackground(Color.WHITE);
@@ -20,8 +21,8 @@ public class StartDialog extends JFrame{
         setResizable(false);
         setLocationRelativeTo(null);
         setContentPane(panel1);
+        startGameButton.addActionListener(c);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
 
     }
 }

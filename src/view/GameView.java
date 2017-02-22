@@ -1,13 +1,14 @@
 package view;
 
 
+import controller.GameViewController;
+
 import javax.swing.*;
 
 public class GameView extends JPanel {
 
-    public GameView(){
+    public GameView(GameViewController c){
         JLabel hallo = new JLabel("HAllo");
         add(hallo);
-        setVisible(true);
     }
 }

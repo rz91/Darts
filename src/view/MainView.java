@@ -1,23 +1,31 @@
 package view;
 
+import controller.DartBoardLabelController;
+import controller.GameViewController;
+
 import javax.swing.*;
 import java.awt.*;
 
 
 public class MainView extends JFrame {
+     public MainView(){
 
-   public MainView(){
+        DartBoardLabelController dblc = new DartBoardLabelController();
+        GameViewController gvc = new GameViewController();
+
+        add(dblc.getDbl());
+        add(gvc.getGv());
 
         getContentPane().setLayout(new FlowLayout());
-        DartBoardLabel dbl = new DartBoardLabel();
-        JPanel dartboard = new JPanel();
-        dartboard.add(dbl);
-        GameView gv = new GameView();
-        add(dartboard);
-        add(gv);
+        makeFrameFullSize(this);
         setResizable(false);
-        pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
-    }
+     }
+
+     private void makeFrameFullSize(JFrame aFrame)
+     {
+          Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+          aFrame.setSize(screenSize.width, screenSize.height);
+     }
 }

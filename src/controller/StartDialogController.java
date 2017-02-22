@@ -10,16 +10,16 @@ public class StartDialogController implements ActionListener {
 
     private StartDialog sd;
 
-    public StartDialogController (StartDialog sd){
-        this.sd = sd;
-        sd.startGameButton.addActionListener(this);
+    public StartDialogController (){
+
+        this.sd = new StartDialog(this);
+        sd.setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-
-        MainView gv = new MainView();
+        new MainView();
         sd.dispose();
     }
 }
