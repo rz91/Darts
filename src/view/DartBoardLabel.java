@@ -3,7 +3,6 @@ package view;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
@@ -13,10 +12,10 @@ import java.io.IOException;
 /**
  * Created by ronnyzingler on 21.02.17.
  */
-public class DartBoard extends JLabel implements MouseListener {
+public class DartBoardLabel extends JLabel implements MouseListener {
     BufferedImage dartboard_black = null;
 
-    public DartBoard(){
+    public DartBoardLabel(){
         try{
             this.dartboard_black = ImageIO.read(new File("images/Dartboard_black.png"));
             BufferedImage dartboard = ImageIO.read(new File("images/Dartboard.png"));

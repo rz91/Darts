@@ -1,6 +1,6 @@
 package controller;
 
-import view.GameView;
+import view.MainView;
 import view.StartDialog;
 
 import java.awt.event.ActionEvent;
@@ -19,7 +19,7 @@ public class StartDialogController implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
 
-        GameView gv = new GameView();
+        MainView gv = new MainView();
         sd.dispose();
     }
 }

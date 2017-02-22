@@ -1,17 +1,13 @@
 package view;
 
+
 import javax.swing.*;
 
+public class GameView extends JPanel {
 
-public class GameView extends JFrame {
-
-   public GameView(){
-
-        DartView dv = new DartView();
-        add(dv);
-        setResizable(false);
-        pack();
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    public GameView(){
+        JLabel hallo = new JLabel("HAllo");
+        add(hallo);
         setVisible(true);
     }
 }
