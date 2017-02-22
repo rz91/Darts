@@ -16,9 +16,13 @@ public class DartBoardView extends JPanel {
     public DartBoardView(){
 
         this.c = new DartBoardViewController(this);
+        this.initialise();
+
+    }
+
+    private void initialise(){
         this.add(initialiseDartBoard());
         this.setVisible(true);
-
     }
 
     private JLabel initialiseDartBoard(){
@@ -29,7 +33,7 @@ public class DartBoardView extends JPanel {
             BufferedImage dartboard = ImageIO.read(new File("images/Dartboard.png"));
             dartboardlabel.setIcon(new ImageIcon(dartboard));
         } catch (IOException ex){
-            System.out.println(ex.getMessage());
+            System.err.println(ex.getMessage());
         }
 
     return dartboardlabel;

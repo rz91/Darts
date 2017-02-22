@@ -22,7 +22,7 @@ public class DartBoardViewController extends MouseAdapter{
         try{
             help_board = ImageIO.read(new File("images/Dartboard_black.png"));
         } catch (IOException ex){
-            System.out.println(ex.getMessage());
+            System.err.println(ex.getMessage());
         }
 
     }
