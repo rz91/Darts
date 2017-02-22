@@ -9,20 +9,26 @@ import java.awt.*;
 public class StartDialog extends JFrame{
     private JComboBox comboBox1;
     private JComboBox comboBox2;
-    public JButton startGameButton;
+    private StartDialogController c;
+    private JButton startGameButton;
     private JPanel panel1;
 
-    public StartDialog( StartDialogController c){
+    public StartDialog(){
 
-        int size_x = 300;
-        int size_y = 300;
+        c = new StartDialogController(this);
+        this.initialise();
+    }
+
+    private void initialise(){
+
         panel1.setBackground(Color.WHITE);
-        setSize(size_x,size_y);
-        setResizable(false);
-        setLocationRelativeTo(null);
-        setContentPane(panel1);
         startGameButton.addActionListener(c);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        this.setSize(300,300);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
+        this.setContentPane(panel1);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setVisible(true);
     }
 }

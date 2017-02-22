@@ -1,6 +1,6 @@
 package controller;
 
-import view.DartBoardLabel;
+import view.DartBoardView;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -10,14 +10,14 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class DartBoardLabelController extends MouseAdapter{
+public class DartBoardViewController extends MouseAdapter{
 
-    private DartBoardLabel dbl;
+    private DartBoardView dbl;
     private BufferedImage help_board;
 
-    public DartBoardLabelController (){
+    public DartBoardViewController(DartBoardView dbl){
 
-        this.dbl = new DartBoardLabel(this);
+        this.dbl = dbl;
 
         try{
             help_board = ImageIO.read(new File("images/Dartboard_black.png"));
@@ -37,7 +37,4 @@ public class DartBoardLabelController extends MouseAdapter{
         System.out.println(r);
     }
 
-    public DartBoardLabel getDbl() {
-        return dbl;
-    }
 }

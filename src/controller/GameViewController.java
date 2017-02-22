@@ -6,14 +6,8 @@ public class GameViewController {
 
     private GameView gv;
 
-    public GameViewController(){
+    public GameViewController(GameView gv){
 
-        gv = new GameView(this);
-        gv.setVisible(true);
-
-    }
-
-    public GameView getGv() {
-        return gv;
+        this.gv = gv;
     }
 }

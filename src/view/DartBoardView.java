@@ -1,6 +1,6 @@
 package view;
 
-import controller.DartBoardLabelController;
+import controller.DartBoardViewController;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -9,9 +9,19 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class DartBoardLabel extends JLabel {
+public class DartBoardView extends JLabel {
 
-    public DartBoardLabel(DartBoardLabelController c){
+    private DartBoardViewController c;
+
+    public DartBoardView(){
+
+        this.c = new DartBoardViewController(this);
+        this.addMouseListener(c);
+        this.initialise();
+
+    }
+
+    private void initialise(){
 
         try{
             BufferedImage dartboard = ImageIO.read(new File("images/Dartboard.png"));
@@ -19,9 +29,6 @@ public class DartBoardLabel extends JLabel {
         } catch (IOException ex){
             System.out.println(ex.getMessage());
         }
-
-        addMouseListener(c);
-
     }
 
 }

@@ -1,6 +1,6 @@
 package controller;
 
-import view.MainView;
+import view.MainWindow;
 import view.StartDialog;
 
 import java.awt.event.ActionEvent;
@@ -10,16 +10,15 @@ public class StartDialogController implements ActionListener {
 
     private StartDialog sd;
 
-    public StartDialogController (){
+    public StartDialogController (StartDialog sd){
 
-        this.sd = new StartDialog(this);
-        sd.setVisible(true);
+        this.sd = sd;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        new MainView();
+        new MainWindow();
         sd.dispose();
     }
 }
