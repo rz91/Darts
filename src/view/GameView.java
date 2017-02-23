@@ -4,30 +4,45 @@ import controller.GameViewController;
 import model.Model;
 
 import javax.swing.*;
-import java.util.Observable;
-import java.util.Observer;
+import java.awt.*;
 
-public class GameView extends JPanel implements Observer{
+public class GameView extends JPanel{
     private Model m;
     private GameViewController c;
-    private JLabel hallo;
+    private PlayerPanel pp;
+    private PlayerPanel ee;
+    private PlayerPanel ff;
+    private PlayerPanel gg;
+    private PlayerPanel ii;
+    private PlayerPanel jj;
 
     public GameView(Model m){
 
         this.m = m;
-        this.m.addObserver(this);
         this.c = new GameViewController(this);
-
-        this.hallo = new JLabel("HAllo");
-        this.add(hallo);
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
-
-        if(m == o){
-            hallo.setText(String.valueOf(m.getScore()));
-        }
+        this.initialise();
 
     }
+
+    private void initialise(){
+
+        this.setLayout(new GridLayout(3,2,50,50));
+        this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
+
+        this.pp = new PlayerPanel(m);
+        this.ee = new PlayerPanel(m);
+        this.ff = new PlayerPanel(m);
+        this.gg = new PlayerPanel(m);
+        this.ii = new PlayerPanel(m);
+        this.jj = new PlayerPanel(m);
+        this.add(pp);
+        this.add(ee);
+        this.add(ff);
+        this.add(gg);
+
+
+
+    }
+
+
 }

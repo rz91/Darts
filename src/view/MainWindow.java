@@ -24,9 +24,10 @@ public class MainWindow extends JFrame {
          this.add(dbl);
          this.add(gv);
 
-         this.getContentPane().setLayout(new FlowLayout());
-         this.makeFrameFullSize(this);
+         this.getContentPane().setLayout(new FlowLayout(FlowLayout.LEFT));
+         this.pack();
          this.setResizable(false);
+         this.setMaximumSize(new Dimension(1920,1080));
          this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
          this.setVisible(true);
      }

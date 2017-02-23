@@ -5,6 +5,7 @@ import model.Model;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -23,6 +24,7 @@ public class DartBoardView extends JPanel {
 
     private void initialise(){
         this.add(initialiseDartBoard());
+        this.setLayout(new FlowLayout(FlowLayout.LEFT,50,50));
         this.setVisible(true);
     }
 
