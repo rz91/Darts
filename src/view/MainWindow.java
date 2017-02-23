@@ -1,18 +1,21 @@
 package view;
 
+import model.Model;
+
 import javax.swing.*;
 import java.awt.*;
 
 
 public class MainWindow extends JFrame {
 
+   private Model m;
    private DartBoardView dbl;
    private GameView gv;
 
      public MainWindow(){
-
-        this.dbl = new DartBoardView();
-        this.gv = new GameView();
+        this.m = new Model();
+        this.dbl = new DartBoardView(m);
+        this.gv = new GameView(m);
         this.initialise();
      }
 

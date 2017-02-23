@@ -1,6 +1,7 @@
 package view;
 
 import controller.DartBoardViewController;
+import model.Model;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -10,12 +11,12 @@ import java.io.IOException;
 
 
 public class DartBoardView extends JPanel {
-
+    private Model m;
     private DartBoardViewController c;
 
-    public DartBoardView(){
-
-        this.c = new DartBoardViewController(this);
+    public DartBoardView(Model m){
+        this.m = m;
+        this.c = new DartBoardViewController(this,m);
         this.initialise();
 
     }
@@ -26,6 +27,7 @@ public class DartBoardView extends JPanel {
     }
 
     private JLabel initialiseDartBoard(){
+
         JLabel dartboardlabel = new JLabel();
         dartboardlabel.addMouseListener(c);
 

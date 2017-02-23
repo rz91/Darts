@@ -1,29 +1,18 @@
 package controller;
 
+import model.Model;
 import view.DartBoardView;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 public class DartBoardViewController extends MouseAdapter{
-
+    private Model m;
     private DartBoardView dbl;
-    private BufferedImage help_board;
 
-    public DartBoardViewController(DartBoardView dbl){
-
+    public DartBoardViewController(DartBoardView dbl, Model m){
+        this.m = m;
         this.dbl = dbl;
-
-        try{
-            help_board = ImageIO.read(new File("images/Dartboard_black.png"));
-        } catch (IOException ex){
-            System.err.println(ex.getMessage());
-        }
 
     }
 
@@ -32,9 +21,8 @@ public class DartBoardViewController extends MouseAdapter{
         int x = e.getX();
         int y = e.getY();
 
-        int r = new Color(help_board.getRGB(x,y)).getRed();
+        m.score(x,y);
 
-        System.out.println(r);
     }
 
 }
