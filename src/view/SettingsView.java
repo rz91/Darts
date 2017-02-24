@@ -1,21 +1,24 @@
 package view;
 
 import controller.SettingsViewController;
+import model.Model;
 
 import javax.swing.*;
 import java.awt.*;
 
 
 public class SettingsView extends JFrame{
-    private JComboBox comboBox1;
-    private JComboBox comboBox2;
+    private JComboBox player;
+    private JComboBox game;
     private SettingsViewController c;
     private JButton startGameButton;
     private JPanel panel1;
+    private Model m;
 
     public SettingsView(){
 
-        c = new SettingsViewController(this);
+        this.m = new Model();
+        this.c = new SettingsViewController(this,m);
         this.initialise();
     }
 
@@ -30,5 +33,14 @@ public class SettingsView extends JFrame{
         this.setContentPane(panel1);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
+    }
+
+    public int getNumberOfPlayers(){
+        return this.player.getSelectedIndex() + 1;
+    }
+
+    public int getGame(){
+
+        return Integer.parseInt((String) this.game.getSelectedItem());
     }
 }

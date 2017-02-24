@@ -19,9 +19,9 @@
           <text value="Darts"/>
         </properties>
       </component>
-      <component id="7fc6c" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+      <component id="7fc6c" class="javax.swing.JComboBox" binding="player">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
           <model>
@@ -29,6 +29,8 @@
             <item value="2"/>
             <item value="3"/>
             <item value="4"/>
+            <item value="5"/>
+            <item value="6"/>
           </model>
         </properties>
       </component>
@@ -58,14 +60,15 @@
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <component id="c6f2f" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+      <component id="c6f2f" class="javax.swing.JComboBox" binding="game">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <model>
-            <item value="501/301"/>
-            <item value="Cricket"/>
+            <item value="301"/>
+            <item value="501"/>
+            <item value="701"/>
           </model>
         </properties>
       </component>

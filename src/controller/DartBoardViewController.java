@@ -21,7 +21,7 @@ public class DartBoardViewController extends MouseAdapter{
         int x = e.getX();
         int y = e.getY();
 
-        m.score(x,y);
+        m.getHit(x,y);
 
     }
 

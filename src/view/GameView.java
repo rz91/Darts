@@ -9,12 +9,7 @@ import java.awt.*;
 public class GameView extends JPanel{
     private Model m;
     private GameViewController c;
-    private PlayerPanel pp;
-    private PlayerPanel ee;
-    private PlayerPanel ff;
-    private PlayerPanel gg;
-    private PlayerPanel ii;
-    private PlayerPanel jj;
+
 
     public GameView(Model m){
 
@@ -28,20 +23,15 @@ public class GameView extends JPanel{
 
         this.setLayout(new GridLayout(3,2,50,50));
         this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
+        this.generatePlayerPanels();
 
-        this.pp = new PlayerPanel(m);
-        this.ee = new PlayerPanel(m);
-        this.ff = new PlayerPanel(m);
-        this.gg = new PlayerPanel(m);
-        this.ii = new PlayerPanel(m);
-        this.jj = new PlayerPanel(m);
-        this.add(pp);
-        this.add(ee);
-        this.add(ff);
-        this.add(gg);
+    }
 
+    private void generatePlayerPanels(){
 
-
+        for (int i = 1; i <= m.getNumber_of_players() ; i++){
+            add(new PlayerPanel(m,i));
+        }
     }
 
 
