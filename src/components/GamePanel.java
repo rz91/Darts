@@ -17,6 +17,7 @@ public class GamePanel extends JPanel implements Observer {
 
         this.m = m;
         this.initialise();
+        this.m.addObserver(this);
 
     }
 
@@ -42,5 +43,9 @@ public class GamePanel extends JPanel implements Observer {
     @Override
     public void update(Observable o, Object arg) {
 
+
+        Player actual_player = (Player) arg;
+
+        playerpanels[actual_player.getId()].setScore(actual_player.getScore());
     }
 }
