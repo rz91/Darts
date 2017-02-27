@@ -19,6 +19,6 @@ public class MainController extends MouseAdapter {
         int x = e.getX();
         int y = e.getY();
 
-        m.getHit(x,y);
+        m.calculateScore(x,y);
     }
 }

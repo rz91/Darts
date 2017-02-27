@@ -11,16 +11,15 @@ public class SettingsViewController implements ActionListener {
     private Model m;
     private SettingsView sd;
 
-    public SettingsViewController(SettingsView sd, Model m){
+    public SettingsViewController(SettingsView sd){
 
         this.sd = sd;
-        this.m = m;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        this.m.setNumber_of_players(sd.getNumberOfPlayers());
-        this.m.setGame(sd.getGame());
+
+        this.m = new Model(sd.getGame(),sd.getNumberOfPlayers());
         new MainView(m);
         sd.dispose();
     }

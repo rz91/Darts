@@ -19,8 +19,8 @@ public class MainView extends JFrame{
      public MainView(Model m){
 
         this.m = m;
-         this.c = new MainController(m);
-         this.dbl = new DartBoardPanel();
+        this.c = new MainController(m);
+        this.dbl = new DartBoardPanel();
         this.gv = new GamePanel(m);
 
         this.initialise();

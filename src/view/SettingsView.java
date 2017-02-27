@@ -17,8 +17,7 @@ public class SettingsView extends JFrame{
 
     public SettingsView(){
 
-        this.m = new Model();
-        this.c = new SettingsViewController(this,m);
+        this.c = new SettingsViewController(this);
         this.initialise();
     }
 

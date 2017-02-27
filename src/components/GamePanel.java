@@ -1,12 +1,16 @@
 package components;
 
 import model.Model;
+import model.Player;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 
-public class GamePanel extends JPanel{
+public class GamePanel extends JPanel implements Observer {
     private Model m;
+    private PlayerPanel[] playerpanels;
 
 
     public GamePanel(Model m){
@@ -24,12 +28,19 @@ public class GamePanel extends JPanel{
 
     }
 
-    private void generatePlayerPanels(){
+    private void generatePlayerPanels() {
 
-        for (int i = 1; i <= m.getNumber_of_players() ; i++){
-            add(new PlayerPanel(m,i));
+        playerpanels = new PlayerPanel[m.getNumberofPlayers()];
+
+        for (int i = 0; i < playerpanels.length; i++){
+            playerpanels[i] = new PlayerPanel(m.getGame());
+            this.add(playerpanels[i]);
         }
     }
 
 
+    @Override
+    public void update(Observable o, Object arg) {
+
+    }
 }
