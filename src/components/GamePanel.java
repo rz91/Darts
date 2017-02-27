@@ -1,20 +1,17 @@
-package view;
+package components;
 
-import controller.GameViewController;
 import model.Model;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class GameView extends JPanel{
+public class GamePanel extends JPanel{
     private Model m;
-    private GameViewController c;
 
 
-    public GameView(Model m){
+    public GamePanel(Model m){
 
         this.m = m;
-        this.c = new GameViewController(this);
         this.initialise();
 
     }

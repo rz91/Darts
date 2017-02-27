@@ -1,7 +1,6 @@
-package view;
+package components;
 
-import controller.DartBoardViewController;
-import model.Model;
+import controller.MainController;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -11,27 +10,23 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class DartBoardView extends JPanel {
-    private Model m;
-    private DartBoardViewController c;
+public class DartBoardPanel extends JPanel {
 
-    public DartBoardView(Model m){
-        this.m = m;
-        this.c = new DartBoardViewController(this,m);
+    public DartBoardPanel(){
         this.initialise();
 
     }
 
     private void initialise(){
-        this.add(initialiseDartBoard());
         this.setLayout(new FlowLayout(FlowLayout.LEFT,50,50));
         this.setVisible(true);
     }
 
-    private JLabel initialiseDartBoard(){
+    public JLabel initialiseDartBoard(MainController c){
 
         JLabel dartboardlabel = new JLabel();
         dartboardlabel.addMouseListener(c);
+        add(dartboardlabel);
 
         try{
             BufferedImage dartboard = ImageIO.read(new File("images/Dartboard.png"));

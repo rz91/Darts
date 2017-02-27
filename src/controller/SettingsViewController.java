@@ -1,7 +1,7 @@
 package controller;
 
 import model.Model;
-import view.MainWindow;
+import view.MainView;
 import view.SettingsView;
 
 import java.awt.event.ActionEvent;
@@ -21,7 +21,7 @@ public class SettingsViewController implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         this.m.setNumber_of_players(sd.getNumberOfPlayers());
         this.m.setGame(sd.getGame());
-        new MainWindow(m);
+        new MainView(m);
         sd.dispose();
     }
 }

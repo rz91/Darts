@@ -1,19 +1,17 @@
 package controller;
 
 import model.Model;
-import view.DartBoardView;
+import view.MainView;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class DartBoardViewController extends MouseAdapter{
+public class MainController extends MouseAdapter {
     private Model m;
-    private DartBoardView dbl;
 
-    public DartBoardViewController(DartBoardView dbl, Model m){
+    public MainController(Model m){
+
         this.m = m;
-        this.dbl = dbl;
-
     }
 
     @Override
@@ -22,7 +20,5 @@ public class DartBoardViewController extends MouseAdapter{
         int y = e.getY();
 
         m.getHit(x,y);
-
     }
-
 }

@@ -1,4 +1,4 @@
-package view;
+package components;
 
 import model.Model;
 
@@ -8,16 +8,20 @@ import java.util.Observer;
 
 public class PlayerPanel extends JPanel implements Observer{
     private Model m;
+    private JPanel panel1;
     private JTextField playername;
     private JLabel score;
     private JLabel out;
-    private JPanel panel1;
+    private int playerId = 0;
 
-    public PlayerPanel(Model m){
+    public PlayerPanel(Model m, int playerId){
 
         this.m = m;
         this.m.addObserver(this);
+        this.playerId = playerId;
         this.add(panel1);
+        this.setPlayername();
+        this.score.setText(String.valueOf(m.getGame()));
     }
 
     @Override
@@ -29,4 +33,7 @@ public class PlayerPanel extends JPanel implements Observer{
 
     }
 
+    public void setPlayername(){
+        this.playername.setText("Player " + playerId);
+    }
 }

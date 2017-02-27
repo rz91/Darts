@@ -1,28 +1,34 @@
 package view;
 
+import components.DartBoardPanel;
+import components.GamePanel;
+import controller.MainController;
 import model.Model;
 
 import javax.swing.*;
 import java.awt.*;
 
 
-public class MainWindow extends JFrame {
+public class MainView extends JFrame{
 
    private Model m;
-   private DartBoardView dbl;
-   private GameView gv;
+   private MainController c;
+   private DartBoardPanel dbl;
+   private GamePanel gv;
 
-     public MainWindow(Model m){
+     public MainView(Model m){
 
         this.m = m;
-        this.dbl = new DartBoardView(m);
-        this.gv = new GameView(m);
+         this.c = new MainController(m);
+         this.dbl = new DartBoardPanel();
+        this.gv = new GamePanel(m);
 
         this.initialise();
      }
 
      private void initialise(){
 
+         this.dbl.initialiseDartBoard(c);
          this.add(dbl);
          this.add(gv);
 
