@@ -15,10 +15,6 @@ public class Player {
         return score;
     }
 
-    public void decreaseScore(int hit) {
-        this.score -= hit;
-    }
-
     public int getId() {
         return id;
     }

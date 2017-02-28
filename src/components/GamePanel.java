@@ -2,13 +2,14 @@ package components;
 
 import model.Model;
 import model.Player;
+import observer.PlayerObserver;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.Observable;
 import java.util.Observer;
 
-public class GamePanel extends JPanel implements Observer {
+public class GamePanel extends JPanel implements PlayerObserver {
     private Model m;
     private PlayerPanel[] playerpanels;
 
@@ -17,7 +18,7 @@ public class GamePanel extends JPanel implements Observer {
 
         this.m = m;
         this.initialise();
-        this.m.addObserver(this);
+        this.m.registerPlayerObserver(this);
 
     }
 
@@ -37,15 +38,22 @@ public class GamePanel extends JPanel implements Observer {
             playerpanels[i] = new PlayerPanel(m.getGame());
             this.add(playerpanels[i]);
         }
+
+        playerpanels[0].setBackground(Color.orange);
     }
 
 
     @Override
-    public void update(Observable o, Object arg) {
-
-
-        Player actual_player = (Player) arg;
+    public void updatePlayerData(Player actual_player) {
 
         playerpanels[actual_player.getId()].setScore(actual_player.getScore());
+
+    }
+
+    public void updatePlayerPanel(int act, int prev){
+
+        playerpanels[act].setBackground(Color.orange);
+        playerpanels[prev].setBackground(Color.WHITE);
+
     }
 }

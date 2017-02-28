@@ -19,8 +19,11 @@ public class PlayerIterator implements Iterator{
     {
         return pos < players.length;
     }
+    public boolean hasPrev() {
+        return pos >= 0;
+    }
 
-    public Player next() throws NoSuchElementException
+    public Player next()
     {
         if ( hasNext() ){
             return players[pos++];
@@ -28,6 +31,15 @@ public class PlayerIterator implements Iterator{
         else
             pos = 0;
             return players[pos++];
+    }
+
+    public Player getPrev()
+    {
+        if ( hasPrev() ){
+            return players[pos -1];
+        }
+        else
+            return players[players.length - 1];
     }
 
     public void remove()
