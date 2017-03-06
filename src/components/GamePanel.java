@@ -39,7 +39,7 @@ public class GamePanel extends JPanel implements PlayerObserver {
             this.add(playerpanels[i]);
         }
 
-        playerpanels[0].setBackground(Color.orange);
+        playerpanels[0].setBackground(new Color (203, 120, 50));
 
     }
 
@@ -48,6 +48,7 @@ public class GamePanel extends JPanel implements PlayerObserver {
     public void updatePlayerData(Player actual_player) {
 
         playerpanels[actual_player.getId()].setScore(actual_player.getScore());
+        playerpanels[actual_player.getId()].setOut(actual_player.getOut());
 
         if (actual_player.getScore() == 0){
             new WinDialog(playerpanels[actual_player.getId()].getName());
@@ -56,8 +57,8 @@ public class GamePanel extends JPanel implements PlayerObserver {
     }
 
     public void updatePlayerPanel(int act, int prev){
-        playerpanels[act].setBackground(Color.orange);
-        playerpanels[prev].setBackground(Color.white);
+        playerpanels[act].setBackground(new Color (203, 120, 50));
+        playerpanels[prev].setBackground(new Color(43, 43, 43));
 
     }
 }

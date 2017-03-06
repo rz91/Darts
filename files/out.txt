@@ -1,0 +1,502 @@
+501,kein finish
+500,kein finish
+499,kein finish
+498,kein finish
+497,kein finish
+496,kein finish
+495,kein finish
+494,kein finish
+493,kein finish
+492,kein finish
+491,kein finish
+490,kein finish
+489,kein finish
+488,kein finish
+487,kein finish
+486,kein finish
+485,kein finish
+484,kein finish
+483,kein finish
+482,kein finish
+481,kein finish
+480,kein finish
+479,kein finish
+478,kein finish
+477,kein finish
+476,kein finish
+475,kein finish
+474,kein finish
+473,kein finish
+472,kein finish
+471,kein finish
+470,kein finish
+469,kein finish
+468,kein finish
+467,kein finish
+466,kein finish
+465,kein finish
+464,kein finish
+463,kein finish
+462,kein finish
+461,kein finish
+460,kein finish
+459,kein finish
+458,kein finish
+457,kein finish
+456,kein finish
+455,kein finish
+454,kein finish
+453,kein finish
+452,kein finish
+451,kein finish
+450,kein finish
+449,kein finish
+448,kein finish
+447,kein finish
+446,kein finish
+445,kein finish
+444,kein finish
+443,kein finish
+442,kein finish
+441,kein finish
+440,kein finish
+439,kein finish
+438,kein finish
+437,kein finish
+436,kein finish
+435,kein finish
+434,kein finish
+433,kein finish
+432,kein finish
+431,kein finish
+430,kein finish
+429,kein finish
+428,kein finish
+427,kein finish
+426,kein finish
+425,kein finish
+424,kein finish
+423,kein finish
+422,kein finish
+421,kein finish
+420,kein finish
+419,kein finish
+418,kein finish
+417,kein finish
+416,kein finish
+415,kein finish
+414,kein finish
+413,kein finish
+412,kein finish
+411,kein finish
+410,kein finish
+409,kein finish
+408,kein finish
+407,kein finish
+406,kein finish
+405,kein finish
+404,kein finish
+403,kein finish
+402,kein finish
+401,kein finish
+400,kein finish
+399,kein finish
+398,kein finish
+397,kein finish
+396,kein finish
+395,kein finish
+394,kein finish
+393,kein finish
+392,kein finish
+391,kein finish
+390,kein finish
+389,kein finish
+388,kein finish
+387,kein finish
+386,kein finish
+385,kein finish
+384,kein finish
+383,kein finish
+382,kein finish
+381,kein finish
+380,kein finish
+379,kein finish
+378,kein finish
+377,kein finish
+376,kein finish
+375,kein finish
+374,kein finish
+373,kein finish
+372,kein finish
+371,kein finish
+370,kein finish
+369,kein finish
+368,kein finish
+367,kein finish
+366,kein finish
+365,kein finish
+364,kein finish
+363,kein finish
+362,kein finish
+361,kein finish
+360,kein finish
+359,kein finish
+358,kein finish
+357,kein finish
+356,kein finish
+355,kein finish
+354,kein finish
+353,kein finish
+352,kein finish
+351,kein finish
+350,kein finish
+349,kein finish
+348,kein finish
+347,kein finish
+346,kein finish
+345,kein finish
+344,kein finish
+343,kein finish
+342,kein finish
+341,kein finish
+340,kein finish
+339,kein finish
+338,kein finish
+337,kein finish
+336,kein finish
+335,kein finish
+334,kein finish
+333,kein finish
+332,kein finish
+331,kein finish
+330,kein finish
+329,kein finish
+328,kein finish
+327,kein finish
+326,kein finish
+325,kein finish
+324,kein finish
+323,kein finish
+322,kein finish
+321,kein finish
+320,kein finish
+319,kein finish
+318,kein finish
+317,kein finish
+316,kein finish
+315,kein finish
+314,kein finish
+313,kein finish
+312,kein finish
+311,kein finish
+310,kein finish
+309,kein finish
+308,kein finish
+307,kein finish
+306,kein finish
+305,kein finish
+304,kein finish
+303,kein finish
+302,kein finish
+301,kein finish
+300,kein finish
+299,kein finish
+298,kein finish
+297,kein finish
+296,kein finish
+295,kein finish
+294,kein finish
+293,kein finish
+292,kein finish
+291,kein finish
+290,kein finish
+289,kein finish
+288,kein finish
+287,kein finish
+286,kein finish
+285,kein finish
+284,kein finish
+283,kein finish
+282,kein finish
+281,kein finish
+280,kein finish
+279,kein finish
+278,kein finish
+277,kein finish
+276,kein finish
+275,kein finish
+274,kein finish
+273,kein finish
+272,kein finish
+271,kein finish
+270,kein finish
+269,kein finish
+268,kein finish
+267,kein finish
+266,kein finish
+265,kein finish
+264,kein finish
+263,kein finish
+262,kein finish
+261,kein finish
+260,kein finish
+259,kein finish
+258,kein finish
+257,kein finish
+256,kein finish
+255,kein finish
+254,kein finish
+253,kein finish
+252,kein finish
+251,kein finish
+250,kein finish
+249,kein finish
+248,kein finish
+247,kein finish
+246,kein finish
+245,kein finish
+244,kein finish
+243,kein finish
+242,kein finish
+241,kein finish
+240,kein finish
+239,kein finish
+238,kein finish
+237,kein finish
+236,kein finish
+235,kein finish
+234,kein finish
+233,kein finish
+232,kein finish
+231,kein finish
+230,kein finish
+229,kein finish
+228,kein finish
+227,kein finish
+226,kein finish
+225,kein finish
+224,kein finish
+223,kein finish
+222,kein finish
+221,kein finish
+220,kein finish
+219,kein finish
+218,kein finish
+217,kein finish
+216,kein finish
+215,kein finish
+214,kein finish
+213,kein finish
+212,kein finish
+211,kein finish
+210,kein finish
+209,kein finish
+208,kein finish
+207,kein finish
+206,kein finish
+205,kein finish
+204,kein finish
+203,kein finish
+202,kein finish
+201,kein finish
+200,kein finish
+199,kein finish
+198,kein finish
+197,kein finish
+196,kein finish
+195,kein finish
+194,kein finish
+193,kein finish
+192,kein finish
+191,kein finish
+190,kein finish
+189,kein finish
+188,kein finish
+187,kein finish
+186,kein finish
+185,kein finish
+184,kein finish
+183,kein finish
+182,kein finish
+181,kein finish
+180,kein finish
+179,kein finish
+178,kein finish
+177,kein finish
+176,kein finish
+175,kein finish
+174,kein finish
+173,kein finish
+172,kein finish
+171,kein finish
+170,T20 T20 Bull
+169,kein finish
+168,kein finish
+167,T20 T19 Bull
+166,kein finish
+165,kein finish
+164,T20 T18 Bull
+163,kein finish
+162,kein finish
+161,T20 T17 Bull
+160,T20 T20 D20
+159,kein finish
+158,T20 T20 D19
+157,T20 T19 D20
+156,T20 T20 D18
+155,T20 T19 D19
+154,T20 T18 D20
+153,T20 T19 D18
+152,T20 T20 D16
+151,T20 T17 D20
+150,T20 T18 D18
+149,T20 T19 D16
+148,T20 T16 D20
+147,T19 T18 D18
+146,T20 T18 D16
+145,T20 T15 D20
+144,T18 T18 D18
+143,T20 T17 D16
+142,T20 T14 D20
+141,T17 T18 D18
+140,T20 T20 D10
+139,T19 T14 D20
+138,T20 T18 D12
+137,T19 T20 D10
+136,T20 T20 D8
+135,T17 T20 D12
+134,T20 T14 D16
+133,T20 T11 D20
+132,T20 T12 D18
+131,T20 T17 D10
+130,T20 S20 Bull
+129,T19 T12 D18
+128,T18 T14 D16
+127,T20 T17 D8
+126,T19 S19 Bull
+125,25 T20 D20
+124,T20 S14 Bull
+123,T19 T10 D18
+122,T18 T12 D16
+121,T20 T7 D20
+120,T20 S20 D20
+119,T20 S19 D20
+118,T20 S18 D20
+117,T20 S17 D20
+116,T20 S16 D20
+115,T20 S15 D20
+114,T20 S14 D20
+113,T20 S13 D20
+112,T20 S20 D16
+111,T20 S19 D16
+110,T20 S18 D16
+109,T20 S17 D16
+108,T20 S16 D16
+107,T19 Bull
+106,T20 S10 D18
+105,T20 S13 D16
+104,T18 Bull
+103,T20 S3 D20
+102,T20 S10 D16
+101,T17 Bull
+100,T20 D20
+99,T20 S7 D16
+98,T20 D19
+97,T19 D20
+96,T20 D18
+95,T19 D19
+94,T18 D20
+93,T19 D18
+92,T20 D16
+91,T17 D20
+90,T18 D18
+89,T19 D16
+88,T16 D20
+87,T17 D18
+86,T18 D16
+85,T15 D20
+84,T20 D12
+83,T17 D16
+82,T14 D20
+81,T15 D18
+80,T20 D10
+79,T13 D20
+78,T18 D12
+77,T19 D10
+76,T20 D8
+75,T17 D12
+74,T18 D10
+73,T19 D8
+72,T12 D18
+71,T17 D10
+70,T10 D20
+69,T13 D15
+68,T20 D4
+67,T17 D8
+66,T10 D18
+65,25 D20
+64,T16 D8
+63,T13 D12
+62,T10 D16
+61,S11 S10 D20
+60,S20 D20
+59,T13 D10
+58,18 D20
+57,19 D19
+56,16 D20
+55,15 D20
+54,14 D20
+53,13 D20
+52,12 D20
+51,11 D20
+50,10 D20 (Bull)
+49,9 D20
+48,8 D20
+47,7 D20
+46,6 D20
+45,5 D20
+44,4 D20
+43,3 D20
+42,2 D20
+41,1 D20
+40,D20
+39,7 D16
+38,D19
+37,5 D16
+36,D18
+35,3 D16
+34,D17
+33,1 D16
+32,D16
+31,1 D15
+30,D15
+29,1 D14
+28,D14
+27,1 D13
+26,D13
+25,1 D12
+24,D12
+23,1 D11
+22,D11
+21,1 D10
+20,D10
+19,1 D9
+18,D9
+17,1 D8
+16,D8
+15,1 D7
+14,D7
+13,1 D6
+12,D6
+11,1 D5
+10,D5
+9,1 D4
+8,D4
+7,1 D3
+6,D3
+5,1 D2
+4,D2
+3,1 D1
+2,D1
+1,0
+0,Checkout

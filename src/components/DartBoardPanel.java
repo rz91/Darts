@@ -13,8 +13,9 @@ import java.io.IOException;
 
 public class DartBoardPanel extends JPanel {
 
-    public DartBoardPanel(){
+    public DartBoardPanel(MainController c){
         this.initialise();
+        this.initialiseDartBoard(c);
 
     }
 
@@ -23,20 +24,12 @@ public class DartBoardPanel extends JPanel {
         this.setVisible(true);
     }
 
-    public JLabel initialiseDartBoard(MainController c){
+    public void initialiseDartBoard(MainController c){
 
-        JLabel dartboardlabel = new JLabel();
+        DartBoardLabel dartboardlabel = new DartBoardLabel();
         dartboardlabel.addMouseListener(c);
         add(dartboardlabel);
 
-        try{
-            BufferedImage dartboard = ImageIO.read(new File("images/Dartboard.png"));
-            dartboardlabel.setIcon(new ImageIcon(dartboard));
-        } catch (IOException ex){
-            System.err.println(ex.getMessage());
-        }
-
-    return dartboardlabel;
     }
 
 

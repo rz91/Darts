@@ -3,6 +3,7 @@ package components;
 import model.Model;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class PlayerPanel extends JPanel{
     private JPanel panel1;
@@ -14,6 +15,7 @@ public class PlayerPanel extends JPanel{
 
         this.add(panel1);
         this.setScore(score);
+        this.name.setBorder (BorderFactory.createLineBorder (new Color (43, 43, 43), 2));
         this.name.setText("Player" + id);
 
     }
@@ -30,8 +32,8 @@ public class PlayerPanel extends JPanel{
         return out;
     }
 
-    public void setOut(JLabel out) {
-        this.out = out;
+    public void setOut(String out) {
+        this.out.setText(out);
     }
 
     public String getName() {

@@ -3,7 +3,7 @@ package model;
 public class Player {
     protected int id;
     protected int score;
-    protected int out;
+    protected String out;
 
     public Player(int score, int id){
         this.score = score;
@@ -25,5 +25,13 @@ public class Player {
 
     public int getId() {
         return id;
+    }
+
+    public void setOut(String out) {
+        this.out = out;
+    }
+
+    public String getOut() {
+        return out;
     }
 }

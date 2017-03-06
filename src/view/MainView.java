@@ -20,7 +20,7 @@ public class MainView extends JFrame{
 
         this.m = m;
         this.c = new MainController(m);
-        this.dbl = new DartBoardPanel();
+        this.dbl = new DartBoardPanel(c);
         this.gv = new GamePanel(m);
 
         this.initialise();
@@ -28,12 +28,15 @@ public class MainView extends JFrame{
 
      private void initialise(){
 
-         this.dbl.initialiseDartBoard(c);
          this.add(dbl);
          this.add(gv);
+         this.dbl.setOpaque(false);
+         this.gv.setOpaque(false);
 
          this.getContentPane().setLayout(new FlowLayout(FlowLayout.LEFT));
+         this.getContentPane().setBackground(new Color(60, 63, 65));
          this.pack();
+         this.setBackground(Color.white);
          this.setLocationRelativeTo(null);
          this.setExtendedState(JFrame.MAXIMIZED_BOTH);
          this.setResizable(false);

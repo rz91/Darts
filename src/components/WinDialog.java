@@ -1,14 +1,17 @@
 package components;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class WinDialog extends JDialog {
 
     WinDialog(String playername){
-        setSize(200,200);
         setModal(true);
         this.setLocationRelativeTo(null);
-        add(new JLabel(playername + " has won!"));
+        JLabel winlabel = new JLabel(playername + " has won!");
+        winlabel.setFont(new Font("Verdana", Font.BOLD, 50));
+        add(winlabel);
+        pack();
         setVisible(true);
     }
 }

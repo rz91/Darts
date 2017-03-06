@@ -6,8 +6,13 @@ import observer.PlayerSubject;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.StringTokenizer;
 
 public class Model extends PlayerSubject {
     BufferedImage help_board;
@@ -19,6 +24,7 @@ public class Model extends PlayerSubject {
     private int actual_score;
     private Player previous_player;
     private int hit_counter = 0;
+    private Map<String,String> outs = new HashMap<>();
 
     public Model (int game, int numberOfPlayers){
 
@@ -27,6 +33,7 @@ public class Model extends PlayerSubject {
 
         initialiseHelpBoard();
         initialisePlayer();
+        initialiseOutMap();
     }
 
     public void initialiseHelpBoard(){
@@ -53,6 +60,17 @@ public class Model extends PlayerSubject {
 
     }
 
+    public void initialiseOutMap(){
+        try {
+            BufferedReader f = new BufferedReader(new FileReader("files/out.txt"));
+            String zeile;
+            while ( (zeile = f.readLine()) != null) {
+                StringTokenizer st = new StringTokenizer(zeile,",");
+                outs.put(st.nextToken(),st.nextToken());
+            }
+        } catch (Exception e) {System.err.print("datei blubla");}
+    }
+
     public void calculateScore (int x , int y){
         int hit = new Color(help_board.getRGB(x,y)).getRed();
         hit_counter++;
@@ -62,12 +80,14 @@ public class Model extends PlayerSubject {
                 actual_score = actual_player.getScore();
                 actual_player.decreaseScore(hit);
 
-                if(actual_player.getScore() < 0){
+                if(checkOverthrow()){
                     actual_player.setScore(actual_score);
+                    setOut();
                     notifyPlayerObservers(actual_player);
                     hit_counter = 0;
                     changePlayer();
                 } else {
+                    setOut();
                     notifyPlayerObservers(actual_player);
                 }
 
@@ -75,12 +95,14 @@ public class Model extends PlayerSubject {
             case 2:
                 actual_player.decreaseScore(hit);
 
-                if(actual_player.getScore() < 0){
+                if(checkOverthrow()){
                     actual_player.setScore(actual_score);
+                    setOut();
                     notifyPlayerObservers(actual_player);
                     hit_counter = 0;
                     changePlayer();
                 } else {
+                    setOut();
                     notifyPlayerObservers(actual_player);
                 }
 
@@ -88,10 +110,12 @@ public class Model extends PlayerSubject {
             case 3:
                 actual_player.decreaseScore(hit);
 
-                if(actual_player.getScore() < 0){
+                if(checkOverthrow()){
                     actual_player.setScore(actual_score);
+                    setOut();
                     notifyPlayerObservers(actual_player);
                 } else {
+                    setOut();
                     notifyPlayerObservers(actual_player);
                 }
 
@@ -105,6 +129,15 @@ public class Model extends PlayerSubject {
         previous_player = pi.getPrev();
         actual_player = pi.next();
         notifyPlayerObservers(actual_player.getId(),previous_player.getId());
+    }
+
+    public void setOut() {
+        String score = String.valueOf(actual_player.getScore());
+        actual_player.setOut(outs.get(score));
+    }
+
+    public boolean checkOverthrow(){
+        return actual_player.getScore() < 0;
     }
 
     public int getNumberOfPlayers() {
