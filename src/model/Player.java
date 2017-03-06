@@ -11,8 +11,16 @@ public class Player {
         System.out.println(this.score);
     }
 
+    public void decreaseScore(int hit){
+        this.score -= hit;
+    }
+
     public int getScore() {
         return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public int getId() {

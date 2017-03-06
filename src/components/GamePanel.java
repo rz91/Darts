@@ -25,21 +25,22 @@ public class GamePanel extends JPanel implements PlayerObserver {
     private void initialise(){
 
         this.setLayout(new GridLayout(3,2,50,50));
-        this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
+        //this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
         this.generatePlayerPanels();
 
     }
 
     private void generatePlayerPanels() {
 
-        playerpanels = new PlayerPanel[m.getNumberofPlayers()];
+        playerpanels = new PlayerPanel[m.getNumberOfPlayers()];
 
         for (int i = 0; i < playerpanels.length; i++){
-            playerpanels[i] = new PlayerPanel(m.getGame());
+            playerpanels[i] = new PlayerPanel(m.getGame(),i + 1);
             this.add(playerpanels[i]);
         }
 
         playerpanels[0].setBackground(Color.orange);
+
     }
 
 
@@ -48,12 +49,15 @@ public class GamePanel extends JPanel implements PlayerObserver {
 
         playerpanels[actual_player.getId()].setScore(actual_player.getScore());
 
+        if (actual_player.getScore() == 0){
+            new WinDialog(playerpanels[actual_player.getId()].getName());
+        }
+
     }
 
     public void updatePlayerPanel(int act, int prev){
-
         playerpanels[act].setBackground(Color.orange);
-        playerpanels[prev].setBackground(Color.WHITE);
+        playerpanels[prev].setBackground(Color.white);
 
     }
 }

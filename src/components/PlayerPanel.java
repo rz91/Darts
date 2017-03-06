@@ -10,10 +10,11 @@ public class PlayerPanel extends JPanel{
     private JLabel score;
     private JLabel out;
 
-    public PlayerPanel(int score){
+    public PlayerPanel(int score, int id){
 
         this.add(panel1);
         this.setScore(score);
+        this.name.setText("Player" + id);
 
     }
 
@@ -31,5 +32,9 @@ public class PlayerPanel extends JPanel{
 
     public void setOut(JLabel out) {
         this.out = out;
+    }
+
+    public String getName() {
+        return name.getText();
     }
 }

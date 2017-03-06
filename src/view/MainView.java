@@ -34,6 +34,8 @@ public class MainView extends JFrame{
 
          this.getContentPane().setLayout(new FlowLayout(FlowLayout.LEFT));
          this.pack();
+         this.setLocationRelativeTo(null);
+         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
          this.setResizable(false);
          this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
          this.setVisible(true);

@@ -20,7 +20,7 @@ public class PlayerIterator implements Iterator{
         return pos < players.length;
     }
     public boolean hasPrev() {
-        return pos >= 0;
+        return pos > 0;
     }
 
     public Player next()
@@ -36,7 +36,7 @@ public class PlayerIterator implements Iterator{
     public Player getPrev()
     {
         if ( hasPrev() ){
-            return players[pos -1];
+            return players[pos - 1];
         }
         else
             return players[players.length - 1];
