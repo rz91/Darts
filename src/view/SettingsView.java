@@ -1,7 +1,7 @@
 package view;
 
 import controller.SettingsViewController;
-import model.Model;
+import model.X01Model;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +13,8 @@ public class SettingsView extends JFrame{
     private SettingsViewController c;
     private JButton startGameButton;
     private JPanel panel1;
-    private Model m;
+    private JComboBox gamechooser;
+    private X01Model m;
 
     public SettingsView(){
 
@@ -24,7 +25,11 @@ public class SettingsView extends JFrame{
     private void initialise(){
 
         panel1.setBackground(Color.WHITE);
+        game.setEnabled(false);
         startGameButton.addActionListener(c);
+        startGameButton.setActionCommand("s");
+        gamechooser.addActionListener(c);
+        gamechooser.setActionCommand("c");
 
         this.setSize(300,300);
         this.setResizable(false);
@@ -41,5 +46,16 @@ public class SettingsView extends JFrame{
     public int getGame(){
 
         return Integer.parseInt((String) this.game.getSelectedItem());
+    }
+
+    public String getChoose() {
+        return String.valueOf(gamechooser.getSelectedItem());
+    }
+
+    public void setDisabled() {
+        game.setEnabled(false);
+    }
+    public void setEnabled() {
+        game.setEnabled(true);
     }
 }

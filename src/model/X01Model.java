@@ -10,11 +10,12 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class Model extends PlayerSubject {
+public class X01Model extends PlayerSubject {
     BufferedImage help_board;
     private int numberOfPlayers;
     private int game;
@@ -26,7 +27,7 @@ public class Model extends PlayerSubject {
     private int hit_counter = 0;
     private Map<String,String> outs = new HashMap<>();
 
-    public Model (int game, int numberOfPlayers){
+    public X01Model(int game, int numberOfPlayers){
 
         this.numberOfPlayers = numberOfPlayers;
         this.game = game;

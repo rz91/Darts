@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jgoodies-common-1.7.0-javadoc">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/jgoodies-common-1_7_0/jgoodies-common-1.7.0/jgoodies-common-1.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Desktop/jgoodies-common-1_7_0/jgoodies-common-1.7.0/jgoodies-common-1.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/jgoodies-common-1_7_0/jgoodies-common-1.7.0/jgoodies-common-1.7.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jgoodies-common-1_7_0/jgoodies-common-1.7.0/jgoodies-common-1.7.0-tests.jar!/" />
+    </SOURCES>
+  </library>
+</component>

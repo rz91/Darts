@@ -94,7 +94,7 @@
         <use
            xlink:href="#double"
            id="use19"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use21"
@@ -102,7 +102,7 @@
         <use
            xlink:href="#triple"
            id="use23"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use25"
@@ -114,7 +114,7 @@
         <use
            xlink:href="#double"
            id="use29"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use31"
@@ -122,7 +122,7 @@
         <use
            xlink:href="#triple"
            id="use33"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use35"
@@ -134,7 +134,7 @@
         <use
            xlink:href="#double"
            id="use39"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use41"
@@ -142,7 +142,7 @@
         <use
            xlink:href="#triple"
            id="use43"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use45"
@@ -154,7 +154,7 @@
         <use
            xlink:href="#double"
            id="use49"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use51"
@@ -162,7 +162,7 @@
         <use
            xlink:href="#triple"
            id="use53"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use55"
@@ -174,7 +174,7 @@
         <use
            xlink:href="#double"
            id="use59"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use61"
@@ -182,7 +182,7 @@
         <use
            xlink:href="#triple"
            id="use63"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use65"
@@ -194,7 +194,7 @@
         <use
            xlink:href="#double"
            id="use69"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use71"
@@ -202,7 +202,7 @@
         <use
            xlink:href="#triple"
            id="use73"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use75"
@@ -214,7 +214,7 @@
         <use
            xlink:href="#double"
            id="use79"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use81"
@@ -222,7 +222,7 @@
         <use
            xlink:href="#triple"
            id="use83"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use85"
@@ -234,7 +234,7 @@
         <use
            xlink:href="#double"
            id="use89"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use91"
@@ -242,7 +242,7 @@
         <use
            xlink:href="#triple"
            id="use93"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use95"
@@ -254,7 +254,7 @@
         <use
            xlink:href="#double"
            id="use99"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use101"
@@ -262,7 +262,7 @@
         <use
            xlink:href="#triple"
            id="use103"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use105"
@@ -274,7 +274,7 @@
         <use
            xlink:href="#double"
            id="use109"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use111"
@@ -282,7 +282,7 @@
         <use
            xlink:href="#triple"
            id="use113"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use115"
@@ -294,7 +294,7 @@
         <use
            xlink:href="#double"
            id="use119"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use121"
@@ -302,7 +302,7 @@
         <use
            xlink:href="#triple"
            id="use123"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use125"
@@ -314,7 +314,7 @@
         <use
            xlink:href="#double"
            id="use129"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use131"
@@ -322,7 +322,7 @@
         <use
            xlink:href="#triple"
            id="use133"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use135"
@@ -334,7 +334,7 @@
         <use
            xlink:href="#double"
            id="use139"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use141"
@@ -342,7 +342,7 @@
         <use
            xlink:href="#triple"
            id="use143"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use145"
@@ -354,7 +354,7 @@
         <use
            xlink:href="#double"
            id="use149"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use151"
@@ -362,7 +362,7 @@
         <use
            xlink:href="#triple"
            id="use153"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use155"
@@ -374,7 +374,7 @@
         <use
            xlink:href="#double"
            id="use159"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use161"
@@ -382,7 +382,7 @@
         <use
            xlink:href="#triple"
            id="use163"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use165"
@@ -394,7 +394,7 @@
         <use
            xlink:href="#double"
            id="use169"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use171"
@@ -402,7 +402,7 @@
         <use
            xlink:href="#triple"
            id="use173"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use175"
@@ -414,7 +414,7 @@
         <use
            xlink:href="#double"
            id="use179"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use181"
@@ -422,7 +422,7 @@
         <use
            xlink:href="#triple"
            id="use183"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use185"
@@ -434,7 +434,7 @@
         <use
            xlink:href="#double"
            id="use189"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use191"
@@ -442,7 +442,7 @@
         <use
            xlink:href="#triple"
            id="use193"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use195"
@@ -454,7 +454,7 @@
         <use
            xlink:href="#double"
            id="use199"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#outer"
            id="use201"
@@ -462,7 +462,7 @@
         <use
            xlink:href="#triple"
            id="use203"
-           fill="red" />
+           fill="rgb(183, 82, 68)" />
         <use
            xlink:href="#inner"
            id="use205"
@@ -474,7 +474,7 @@
         <use
            xlink:href="#double"
            id="use209"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#outer"
            id="use211"
@@ -482,7 +482,7 @@
         <use
            xlink:href="#triple"
            id="use213"
-           fill="green" />
+           fill="rgb(35, 107, 36)" />
         <use
            xlink:href="#inner"
            id="use215"
@@ -492,12 +492,12 @@
          r="30"
          id="circle217"
          stroke-width="0"
-         fill="green" />
+         fill="rgb(35, 107, 36)" />
       <circle
          r="15"
          id="circle219"
          stroke-width="0"
-         fill="red" />
+         fill="rgb(183, 82, 68)" />
       <g
          id="grid">
         <use

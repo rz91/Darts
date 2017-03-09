@@ -1,19 +1,14 @@
 package components;
 
-import controller.MainController;
+import controller.X01Controller;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 
 public class DartBoardPanel extends JPanel {
 
-    public DartBoardPanel(MainController c){
+    public DartBoardPanel(X01Controller c){
         this.initialise();
         this.initialiseDartBoard(c);
 
@@ -24,7 +19,7 @@ public class DartBoardPanel extends JPanel {
         this.setVisible(true);
     }
 
-    public void initialiseDartBoard(MainController c){
+    public void initialiseDartBoard(X01Controller c){
 
         DartBoardLabel dartboardlabel = new DartBoardLabel();
         dartboardlabel.addMouseListener(c);

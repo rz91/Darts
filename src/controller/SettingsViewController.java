@@ -1,14 +1,16 @@
 package controller;
 
-import model.Model;
-import view.MainView;
+import model.CricketModel;
+import model.X01Model;
+import view.CricketView;
+import view.X01View;
 import view.SettingsView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SettingsViewController implements ActionListener {
-    private Model m;
+    private X01Model m;
     private SettingsView sd;
 
     public SettingsViewController(SettingsView sd){
@@ -19,8 +21,25 @@ public class SettingsViewController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        this.m = new Model(sd.getGame(),sd.getNumberOfPlayers());
-        new MainView(m);
-        sd.dispose();
+        switch (e.getActionCommand()){
+            case "s":
+                if(sd.getChoose() == "Cricket"){
+                    new CricketView(new CricketModel(sd.getNumberOfPlayers()));
+                } else {
+                    this.m = new X01Model(sd.getGame(),sd.getNumberOfPlayers());
+                    new X01View(m);
+                }
+
+                sd.dispose();
+                break;
+
+            case "c":
+                if(sd.getChoose() == "Cricket"){
+                    sd.setDisabled();
+                } else {
+                    sd.setEnabled();
+                }
+                break;
+        }
     }
 }

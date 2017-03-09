@@ -1,15 +1,14 @@
 package controller;
 
-import model.Model;
-import view.MainView;
+import model.X01Model;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class MainController extends MouseAdapter {
-    private Model m;
+public class X01Controller extends MouseAdapter {
+    private X01Model m;
 
-    public MainController(Model m){
+    public X01Controller(X01Model m){
 
         this.m = m;
     }

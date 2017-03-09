@@ -1,20 +1,18 @@
 package components;
 
-import model.Model;
+import model.X01Model;
 import model.Player;
 import observer.PlayerObserver;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Observable;
-import java.util.Observer;
 
 public class GamePanel extends JPanel implements PlayerObserver {
-    private Model m;
+    private X01Model m;
     private PlayerPanel[] playerpanels;
 
 
-    public GamePanel(Model m){
+    public GamePanel(X01Model m){
 
         this.m = m;
         this.initialise();
@@ -36,10 +34,11 @@ public class GamePanel extends JPanel implements PlayerObserver {
 
         for (int i = 0; i < playerpanels.length; i++){
             playerpanels[i] = new PlayerPanel(m.getGame(),i + 1);
+            playerpanels[i].undoHighlighting();
             this.add(playerpanels[i]);
         }
 
-        playerpanels[0].setBackground(new Color (203, 120, 50));
+        playerpanels[0].setHighlighted();
 
     }
 
@@ -50,15 +49,11 @@ public class GamePanel extends JPanel implements PlayerObserver {
         playerpanels[actual_player.getId()].setScore(actual_player.getScore());
         playerpanels[actual_player.getId()].setOut(actual_player.getOut());
 
-        if (actual_player.getScore() == 0){
-            new WinDialog(playerpanels[actual_player.getId()].getName());
-        }
-
     }
 
     public void updatePlayerPanel(int act, int prev){
-        playerpanels[act].setBackground(new Color (203, 120, 50));
-        playerpanels[prev].setBackground(new Color(43, 43, 43));
+        playerpanels[act].setHighlighted();
+        playerpanels[prev].undoHighlighting();
 
     }
 }
