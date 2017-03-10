@@ -24,13 +24,19 @@ public class X01Model extends PlayerSubject {
     private Player actual_player;
     private int actual_score;
     private Player previous_player;
-    private int hit_counter = 0;
+    private int hit_counter;
     private Map<String,String> outs = new HashMap<>();
 
     public X01Model(int game, int numberOfPlayers){
 
+        initialise(game,numberOfPlayers);
+
+    }
+
+    public void initialise(int game, int numberOfPlayers){
         this.numberOfPlayers = numberOfPlayers;
         this.game = game;
+        this.hit_counter = 3;
 
         initialiseHelpBoard();
         initialisePlayer();

@@ -50,6 +50,10 @@ public class GamePanel extends JPanel implements PlayerObserver {
         playerpanels[actual_player.getId()].setOut(actual_player.getOut());
         playerpanels[actual_player.getId()].setHit(hit_counter);
 
+        if (actual_player.getScore() == 0){
+            new NewGameDialog(m);
+        }
+
     }
 
     public void updatePlayerPanel(int act, int prev){
