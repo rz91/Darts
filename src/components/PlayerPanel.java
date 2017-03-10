@@ -54,6 +54,7 @@ public class PlayerPanel extends JPanel{
         out.setForeground(grey);
         name.setForeground(grey);
         name.setBorder (BorderFactory.createLineBorder (orange,2));
+        name.setCaretColor(grey);
         scorelabel.setForeground(grey);
     }
 
