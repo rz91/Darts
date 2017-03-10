@@ -84,12 +84,12 @@ public class X01Model extends PlayerSubject {
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                     hit_counter = 0;
                     changePlayer();
                 } else {
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                 }
 
                 break;
@@ -99,12 +99,12 @@ public class X01Model extends PlayerSubject {
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                     hit_counter = 0;
                     changePlayer();
                 } else {
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                 }
 
                 break;
@@ -114,10 +114,10 @@ public class X01Model extends PlayerSubject {
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                 } else {
                     setOut();
-                    notifyPlayerObservers(actual_player);
+                    notifyPlayerObservers(actual_player,hit_counter);
                 }
 
                 hit_counter = 0;

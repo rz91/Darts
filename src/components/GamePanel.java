@@ -44,10 +44,11 @@ public class GamePanel extends JPanel implements PlayerObserver {
 
 
     @Override
-    public void updatePlayerData(Player actual_player) {
+    public void updatePlayerData(Player actual_player,int hit_counter) {
 
         playerpanels[actual_player.getId()].setScore(actual_player.getScore());
         playerpanels[actual_player.getId()].setOut(actual_player.getOut());
+        playerpanels[actual_player.getId()].setHit(hit_counter);
 
     }
 

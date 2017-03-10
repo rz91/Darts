@@ -22,9 +22,9 @@ public abstract class PlayerSubject {
         }
     }
 
-    public void notifyPlayerObservers(Player actual_player) {
+    public void notifyPlayerObservers(Player actual_player, int hit_counter) {
         for (PlayerObserver observer : observerList) {
-            observer.updatePlayerData(actual_player);
+            observer.updatePlayerData(actual_player,hit_counter);
         }
     }
 }

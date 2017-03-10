@@ -9,6 +9,7 @@ public class PlayerPanel extends JPanel{
     private JLabel score;
     private JLabel scorelabel;
     private JLabel out;
+    private JLabel hit;
     private Color orange = new Color (203,120,50);
     private Color grey = new Color (43, 43, 43);
 
@@ -40,7 +41,13 @@ public class PlayerPanel extends JPanel{
         return name.getText();
     }
 
+    public void setHit(int hit) {
+      this.hit.setText(String.valueOf(3 - hit));
+    }
+
     public void setHighlighted (){
+        hit.setText("3");
+        hit.setForeground(grey);
         setBackground(orange);
         setBorder (BorderFactory.createLineBorder (grey, 4));
         score.setForeground(grey);
@@ -52,6 +59,7 @@ public class PlayerPanel extends JPanel{
 
     public void undoHighlighting () {
         setBackground(grey);
+        hit.setForeground(orange);
         setBorder (BorderFactory.createLineBorder (orange, 4));
         score.setForeground(orange);
         out.setForeground(orange);
