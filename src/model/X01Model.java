@@ -29,14 +29,14 @@ public class X01Model extends PlayerSubject {
 
     public X01Model(int game, int numberOfPlayers){
 
-        initialise(game,numberOfPlayers);
+        this.initialise(game,numberOfPlayers);
 
     }
 
     public void initialise(int game, int numberOfPlayers){
         this.numberOfPlayers = numberOfPlayers;
         this.game = game;
-        this.hit_counter = 3;
+        this.hit_counter = 0;
 
         initialiseHelpBoard();
         initialisePlayer();

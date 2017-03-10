@@ -51,7 +51,7 @@ public class GamePanel extends JPanel implements PlayerObserver {
         playerpanels[actual_player.getId()].setHit(hit_counter);
 
         if (actual_player.getScore() == 0){
-            new NewGameDialog(m);
+            new NewGameDialog(m,this);
         }
 
     }
@@ -60,5 +60,13 @@ public class GamePanel extends JPanel implements PlayerObserver {
         playerpanels[act].setHighlighted();
         playerpanels[prev].undoHighlighting();
 
+    }
+
+    public void reset(){
+        for (int i = 0; i < playerpanels.length; i++){
+            playerpanels[i].setScore(m.getGame());
+        }
+
+        playerpanels[0].setHit(3);
     }
 }
