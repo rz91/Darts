@@ -7,25 +7,25 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CricketView extends View {
-    private CricketModel m;
+    private int number_of_players;
 
-    public CricketView(CricketModel m){
+    public CricketView(int number_of_players){
 
-        this.m = m;
+        this.number_of_players = number_of_players;
         this.initialise();
 
 
     }
 
     public void initialise(){
-
-        this.setContentPane(new CricketPanel(m));
+        this.getContentPane().setLayout(new FlowLayout(FlowLayout.RIGHT));
+        this.setContentPane(new CricketPanel(number_of_players));
         //this.getContentPane().setBackground(new Color(60, 63, 65));
-        this.setSize(500,500);
+        this.pack();
         this.setBackground(Color.white);
         this.setLocationRelativeTo(null);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        this.setResizable(false);
+        //this.setResizable(false);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
     }

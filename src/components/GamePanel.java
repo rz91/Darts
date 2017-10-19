@@ -23,7 +23,7 @@ public class GamePanel extends JPanel implements PlayerObserver {
     private void initialise(){
 
         this.setLayout(new GridLayout(3,2,50,50));
-        //this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
+        this.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
         this.generatePlayerPanels();
 
     }
@@ -65,8 +65,14 @@ public class GamePanel extends JPanel implements PlayerObserver {
     public void reset(){
         for (int i = 0; i < playerpanels.length; i++){
             playerpanels[i].setScore(m.getGame());
+            playerpanels[i].setOut("kein finish");
+
+            if (i != 0) {
+                playerpanels[i].setHit(3);
+            }
         }
 
-        playerpanels[0].setHit(3);
+        playerpanels[0].setHit(0);
+        playerpanels[0].setHighlighted();
     }
 }

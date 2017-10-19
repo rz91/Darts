@@ -25,7 +25,7 @@ public class SettingsViewController implements ActionListener {
         switch (e.getActionCommand()){
             case "s":
                 if(sd.getChoose() == "Cricket"){
-                    new CricketView(new CricketModel(sd.getNumberOfPlayers()));
+                    new CricketView(sd.getNumberOfPlayers());
                 } else {
                     this.m = new X01Model(sd.getGame(),sd.getNumberOfPlayers());
                     new X01View(m);

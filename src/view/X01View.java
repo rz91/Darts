@@ -38,9 +38,9 @@ public class X01View extends View{
          this.pack();
          this.setBackground(Color.white);
          this.setLocationRelativeTo(null);
-         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-         this.setResizable(false);
-         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+         //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+         //this.setResizable(false);
+         //this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
          this.setVisible(true);
      }
 

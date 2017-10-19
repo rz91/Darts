@@ -1,14 +1,19 @@
 package model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Player {
     protected int id;
     protected int score;
     protected String out;
+    private Map<String,String> outs;
 
-    public Player(int score, int id){
+
+    public Player(int score, int id, Map<String,String> outs){
+        this.outs = outs;
         this.score = score;
         this.id = id;
-        System.out.println(this.score);
     }
 
     public void decreaseScore(int hit){
@@ -27,8 +32,9 @@ public class Player {
         return id;
     }
 
-    public void setOut(String out) {
-        this.out = out;
+    public void setOut() {
+
+        this.out = outs.get(String.valueOf(score));
     }
 
     public String getOut() {

@@ -39,8 +39,8 @@ public class X01Model extends PlayerSubject {
         this.hit_counter = 0;
 
         initialiseHelpBoard();
-        initialisePlayer();
         initialiseOutMap();
+        initialisePlayer();
     }
 
     public void initialiseHelpBoard(){
@@ -58,7 +58,8 @@ public class X01Model extends PlayerSubject {
         players = new Player[this.numberOfPlayers];
 
         for(int i = 0; i < players.length; i++){
-            players[i] = new Player(this.game,i);
+            players[i] = new Player(this.game,i,outs);
+            players[i].setOut();
         }
 
         pi = new PlayerIterator(players);
@@ -89,12 +90,12 @@ public class X01Model extends PlayerSubject {
 
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                     hit_counter = 0;
                     changePlayer();
                 } else {
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                 }
 
@@ -104,12 +105,12 @@ public class X01Model extends PlayerSubject {
 
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                     hit_counter = 0;
                     changePlayer();
                 } else {
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                 }
 
@@ -119,10 +120,10 @@ public class X01Model extends PlayerSubject {
 
                 if(checkOverthrow()){
                     actual_player.setScore(actual_score);
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                 } else {
-                    setOut();
+                    actual_player.setOut();
                     notifyPlayerObservers(actual_player,hit_counter);
                 }
 
@@ -136,11 +137,6 @@ public class X01Model extends PlayerSubject {
         previous_player = pi.getPrev();
         actual_player = pi.next();
         notifyPlayerObservers(actual_player.getId(),previous_player.getId());
-    }
-
-    public void setOut() {
-        String score = String.valueOf(actual_player.getScore());
-        actual_player.setOut(outs.get(score));
     }
 
     public boolean checkOverthrow(){
