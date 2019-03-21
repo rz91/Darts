@@ -14,7 +14,6 @@ public class PlayerPanel extends JPanel{
     private Color grey = new Color (43, 43, 43);
 
     public PlayerPanel(int score, int id){
-
         this.add(panel1);
         this.setScore(score);
         this.name.setText("Player" + id);
